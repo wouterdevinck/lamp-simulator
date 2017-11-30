@@ -138,6 +138,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractLedBoardChain.h" />
     <ClInclude Include="HttpHandlerWrapper.h" />
     <ClInclude Include="AbstractHttpServer.h" />
     <ClInclude Include="AbstractRgbLed.h" />
@@ -146,6 +147,7 @@
     <ClInclude Include="Stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractLedBoardChain.cpp" />
     <ClCompile Include="HttpHandlerWrapper.cpp" />
     <ClCompile Include="AbstractHttpServer.cpp" />
     <ClCompile Include="AbstractRgbLed.cpp" />

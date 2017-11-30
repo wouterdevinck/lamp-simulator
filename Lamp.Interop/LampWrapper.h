@@ -3,6 +3,7 @@
 #include "Lamp.h"
 #include "AbstractHttpServer.h"
 #include "AbstractRgbLed.h"
+#include "AbstractLedBoardChain.h"
 
 using namespace System;
 using namespace lamp;
@@ -13,8 +14,8 @@ namespace LampInterop {
 
 	public:
 		
-		LampWrapper(AbstractHttpServer^ http, AbstractRgbLed^ led) {
-			m_Impl = new Lamp(http->Native(), led->Native());
+		LampWrapper(AbstractHttpServer^ http, AbstractRgbLed^ led, AbstractLedBoardChain^ leds) {
+			m_Impl = new Lamp(http->Native(), led->Native(), leds->Native());
 		}
 		
 		void Start(int port) {
