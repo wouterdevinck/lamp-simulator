@@ -6,7 +6,7 @@ namespace Lamp.Simulator {
 
     internal class LedArray : AbstractLedBoardChain {
 
-        protected override void AddKeyframe(int milliseconds, List<LedValueWrapper> keyframe) {
+        protected override void AddKeyframe(long milliseconds, List<LedValueWrapper> keyframe) {
             throw new NotImplementedException();
         }
 

@@ -58,7 +58,7 @@ namespace LampInterop {
 		ILedBoardChain* Native() { return pUnmanaged; }
 
 	protected:
-		virtual void AddKeyframe(int milliseconds, List<LedValueWrapper^>^ keyframe) = 0;
+		virtual void AddKeyframe(Int64 milliseconds, List<LedValueWrapper^>^ keyframe) = 0;
 
 	internal:
 		void CallAddKeyframe(milliseconds duration, vector<LedValue> keyframe) {
