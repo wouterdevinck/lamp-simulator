@@ -9,8 +9,9 @@ namespace Lamp.Simulator {
             
             var http = new HttpServer();
             var led = new RgbLed(ellipse);
+            var leds = new LedArray();
 
-            var lamp = new LampWrapper(http, led); 
+            var lamp = new LampWrapper(http, led, leds); 
             
             lamp.Start(8282);
 

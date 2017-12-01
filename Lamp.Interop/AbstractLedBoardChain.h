@@ -58,7 +58,7 @@ namespace LampInterop {
 		ILedBoardChain* Native() { return pUnmanaged; }
 
 	protected:
-		virtual void AddKeyframe(TimeSpan^ duration, List<LedValueWrapper^>^ keyframe) = 0;
+		virtual void AddKeyframe(int milliseconds, List<LedValueWrapper^>^ keyframe) = 0;
 
 	internal:
 		void CallAddKeyframe(milliseconds duration, vector<LedValue> keyframe) {
@@ -69,8 +69,7 @@ namespace LampInterop {
 				auto wrapper = gcnew LedValueWrapper(*itr);
 				list->Add(wrapper);
 			}
-			auto time = gcnew TimeSpan(0, 0, 0, 0, duration.count);
-			AddKeyframe(time, list);
+			AddKeyframe(duration.count(), list);
 		}
 
 	};
