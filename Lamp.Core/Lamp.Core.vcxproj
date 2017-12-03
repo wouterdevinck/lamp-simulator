@@ -111,6 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="lamp-core\ILedBoardChain.h" />
     <ClInclude Include="lamp-core\HttpHandler.h" />
     <ClInclude Include="lamp-core\IHttpHandler.h" />
     <ClInclude Include="lamp-core\IHttpServer.h" />

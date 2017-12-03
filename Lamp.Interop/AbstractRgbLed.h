@@ -4,7 +4,6 @@
 #include "IRgbLed.h"
 
 using namespace System;
-
 using namespace lamp;
 using namespace std;
 
