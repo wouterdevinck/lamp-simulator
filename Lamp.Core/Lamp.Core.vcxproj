@@ -111,16 +111,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="lamp-core\ILedBoardChain.h" />
-    <ClInclude Include="lamp-core\HttpHandler.h" />
-    <ClInclude Include="lamp-core\IHttpHandler.h" />
-    <ClInclude Include="lamp-core\IHttpServer.h" />
-    <ClInclude Include="lamp-core\IRgbLed.h" />
-    <ClInclude Include="lamp-core\Lamp.h" />
+    <ClInclude Include="lamp-core\src\ILedBoardChain.h" />
+    <ClInclude Include="lamp-core\src\HttpHandler.h" />
+    <ClInclude Include="lamp-core\src\IHttpHandler.h" />
+    <ClInclude Include="lamp-core\src\IHttpServer.h" />
+    <ClInclude Include="lamp-core\src\IRgbLed.h" />
+    <ClInclude Include="lamp-core\src\Lamp.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lamp-core\HttpHandler.cpp" />
-    <ClCompile Include="lamp-core\Lamp.cpp" />
+    <ClCompile Include="lamp-core\src\HttpHandler.cpp" />
+    <ClCompile Include="lamp-core\src\Lamp.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
