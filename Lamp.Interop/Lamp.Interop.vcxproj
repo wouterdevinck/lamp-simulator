@@ -91,7 +91,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>../Lamp.Core/lamp-core</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../Lamp.Core/lamp-core/src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>
@@ -115,7 +115,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>../Lamp.Core/lamp-core</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../Lamp.Core/lamp-core/src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
